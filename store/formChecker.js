@@ -1,16 +1,18 @@
 function verify() {
-    var aloeNum = document.getElementsByName("aloeQuantity").value;
-    var tomatoNum = document.getElementsByName("tomatoQuantity").value;
-    var geraniumNum = document.getElementsByName("geraniumQuantity").value;
-    var shipping = document.getElementsByName("ship").value;
+    var aloeNum = document.getElementById("aloeQuantity").value
+    var tomatoNum = document.getElementById("tomatoQuantity").value
+    var geraniumNum = document.getElementById("geraniumQuantity").value;
+    var shipping = document.getElementById("ship").value;
     var username = document.getElementById("un").value;
     var password = document.getElementById("pw").value;
+
+    console.log(aloeNum);
 
     var selectItems = false;
     var checkUser = false;
     var checkPassword = false;
 
-    if(aloeNum == "" || tomatoNum == "" || geraniumNum == "" || aloeNum < 0 || tomatoNum < 0 || GeraniumNum < 0)
+    if(aloeNum == "" || tomatoNum == "" || geraniumNum == "" || aloeNum < 0 || tomatoNum < 0 || geraniumNum < 0)
     {
         alert("Please select a quantity for all items.");
         selectItems = false;
