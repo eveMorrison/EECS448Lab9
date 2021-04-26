@@ -6,8 +6,6 @@ function verify() {
     var username = document.getElementById("un").value;
     var password = document.getElementById("pw").value;
 
-    console.log(aloeNum);
-
     var selectItems = false;
     var checkUser = false;
     var checkPassword = false;
