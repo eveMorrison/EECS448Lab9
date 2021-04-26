@@ -54,5 +54,5 @@ function verify() {
 
 function validate(Username)
 {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Username)
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Username);
 }
